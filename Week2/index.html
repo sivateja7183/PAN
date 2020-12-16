@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Exam</title>
+	<style type="text/css">
+		body{
+			margin:10px;
+		}
+		table{
+			
+			
+			text-align: left;
+			width: 100%;
+			border-collapse: collapse;
+		}
+		table, td, th{
+			
+			border:1px solid #ccc;
+		}
+		.td1, .th1{
+			border-right: 1px solid #ddd;
+		}
+		.red{
+			color: red;
+		}
+		.line{
+			padding: 5px;
+			border-bottom: 1px solid #000;
+		}
+		.td1{
+			width:10%;
+		}
+		.td2{
+			width: 45%;
+		}
+		.th1{
+			width: 45%;
+		}
+		.head{
+			background-color: brown;
+			color: #fff;
+			font-size: 18px;
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<form>
+	<table>
+		<tr class="head"><th colspan="4">Request for new pan card</th></tr>
+		<tr class="line">
+			<td class="td1"></td>
+			<th class="th1">Whether citizen of india</th>
+			<td class="td2" colspan="2"> <input type="radio" name="citizen" value="yes"><label>Yes</label>
+			 <input type="radio" name="citizen" value="no"> <label>No</label></td>
+		</tr>
+		<tr class="line">
+			<td class="td1"></td>
+			<th class="th1">Pan number</th>
+			<td class="td2" colspan="2"><input type="text" name="pan_number"></td>
+		</tr>
+		<tr class="line">
+			<td class="td1"><input type="checkbox" name="testcheck"></td>
+			<th class="th1" colspan="3">1. Name<span class="red">*</span></th>
+		</tr>	
+		<tr>
+			<td></td>
+			<th>title</th>
+			<td colspan="2"> <input type="radio" name="title" value="mr"><label>mr</label>
+	 			<input type="radio" name="title" value="mrs"> <label>mrs</label>
+	 			<input type="radio" name="title" value="ms"> <label>ms</label>
+			</td>
+		</tr>
+		<tr>
+					<td></td>
+					<td> Last name
+					 <input type="text" name="lastname">
+					</td>
+					<td> first name
+					 <input type="text" name="firstname">
+					</td>
+					<td> middle name
+					 <input type="text" name="middlename">
+					</td>
+		</tr>
+		<tr>
+					<td></td>
+					<th>Name as printed on card</th>
+					<td colspan="2"><input type="text" name="print_on_card"></td>
+		</tr>
+		<tr>
+					<td></td>
+					<th>Whether mother is single parent</th>
+					<td colspan="2"> <input type="radio" name="single_parent" value="yes"><label>Yes</label>
+			 			<input type="radio" name="single_parent" value="no"> <label>No</label>
+			 		</td>
+			
+		</tr>
+		<tr class="line">
+			<td class="td1"><input type="checkbox" name="testcheck"></td>
+			<th class="th1" colspan="3">2. Father's Name<span class="red">*</span></th>
+		</tr>
+		<tr>
+					<td></td>
+					<td> Last name
+					 <input type="text" name="lastname">
+					</td>
+					<td> first name
+					 <input type="text" name="firstname">
+					</td>
+					<td> middle name
+					 <input type="text" name="middlename">
+					</td>
+		</tr>
+			
+		 <tr class="line">
+			<td><input type="checkbox" name="testcheck"></td>
+			<th colspan="3">3. Mothers's Name<span class="red">*</span></th>
+		</tr>
+		<tr>
+					<td></td>
+					<td> Last name
+					 <input type="text" name="lastname">
+					</td>
+					<td> first name
+					 <input type="text" name="firstname">
+					</td>
+					<td> middle name
+					 <input type="text" name="middlename">
+					</td>
+		</tr>
+		<tr>
+					<td></td>
+					<th>Select parent</th>
+					<td colspan="2"> <input type="radio" name="parentNmae" value="yes"><label>Father</label>
+			 			<input type="radio" name="parentNmae" value="no"> <label>Mother</label>
+			 		</td>
+		</tr>
+			
+		<tr class="line">
+			<td><input type="checkbox" name="testcheck"></td>
+			<th>5. Date of birth<span class="red">*</span></th>
+			<td colspan="2"> <input type="date" name="dob"></td>
+		</tr>
+		<tr class="line">
+			<td><input type="checkbox" name="testcheck"></td>
+			<th>6. gender<span class="red">*</span></th>
+			<td colspan="2"> 
+				<input type="radio" name="gender" value="male"><label>Male</label>
+	 			<input type="radio" name="gender" value="female"> <label>Female</label>
+	 			<input type="radio" name="gender" value="trans"> <label>transgender</label>
+	 		</td>
+				
+		</tr>
+		<tr class="line">
+			<td><input type="checkbox" name="testcheck"></td>
+			<th colspan="3">7. Photo mismatch</th>
+		</tr>
+		<tr class="line">
+			<td><input type="checkbox" name="testcheck"></td>
+			<th colspan="3">8. signature mismatch</th>
+		</tr>
+		<tr class="line">
+			<td><input type="checkbox" name="testcheck"></td>
+			<th>9. Address of communication</th>
+			<td colspan="2">
+				<input type="radio" name="address" value="res"><label>Residence</label>
+	 			<input type="radio" name="address" value="off"> <label>Office</label>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<th>office name</th>
+			<td colspan="2"><input type="text" name=""></td>
+		</tr>
+		<tr>
+			<td></td>
+			<th>residential block name</th>
+			<td colspan="2"><input type="text" name=""></td>
+		</tr>
+		<tr>
+			<td></td>
+			<th>Area/ locality</th>
+			<td colspan="2"><input type="text" name=""></td>
+		</tr>
+		<tr>
+			<td></td>
+			<th>City</th>
+			<td colspan="2"><input type="text" name=""></td>
+		</tr>
+		<tr>
+			<td></td>
+			<th>State</th>
+			<td colspan="2"> <select name="state">
+					<option value="st1">AP</option>
+					<option value="st2">Maharashtra</option>
+					<option value="st3">Karnataka</option>
+					<option value="st4">MP</option>
+					<option value="st5">UP</option>
+				</select>
+			</td>
+		</tr>
+		<tr class="line">
+			<td><input type="checkbox" name="testcheck"></td>
+			<th>10. Email Address<span class="red">*</span></th>
+			<td colspan="2"><input type="email" name="email_address"></td>
+		</tr>
+		<tr class="line">
+			<td><input type="checkbox" name="testcheck"></td>
+			<th>11. Telephone number<span class="red">*</span></th>
+			<td colspan="2"><input type="number" name="mobile"></td>
+		</tr>
+			<tr class="line">
+			<td><input type="checkbox" name="testcheck"></td>
+			<th>13. Aadhar number<span class="red">*</span></th>
+			<td colspan="2"><input type="text" name="aadhar"></td>
+		</tr>
+		<tr class="line">
+			<td><input type="checkbox" name="testcheck"></td>
+			<th>14. Upload Photo</th>
+			<td colspan="2"><input type="file" name="photo"></td>
+		</tr>
+		<tr class="line">
+			<td><input type="checkbox" name="testcheck"></td>
+			<th>15. Upload Document</th>
+			<td colspan="2"><input type="file" name="doc"></td>
+		</tr>
+		<tr class="line">
+			<td><input type="checkbox" name="testcheck"></td>
+			<th>16. Upload Signature</th>
+			<td colspan="2"><input type="file" name="signature"></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
